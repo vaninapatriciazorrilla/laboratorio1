@@ -28,16 +28,18 @@ float imprimeResultado(float x , float y)
     float resta;
     float division;
     float multiplicacion;
-    float facto1;
-    float facto2;
+    long long int facto1;
+    long long int facto2;
+    int numFac=x;
+    int num2Fac=y;
     float num= x;
     float num1=y;
     suma = Sumando(num, num1);
     resta = Restando(num, num1);
     division= Dividiendo(num, num1);
     multiplicacion= Multiplicando(num, num1);
-    facto1= Factorial(num);
-    facto2= Factorial(num1);
+    facto1= Factorial(numFac);
+    facto2= Factorial(num2Fac);
 
     printf(" los resultados son los siguientes:\n");
     printf("********************\n");
@@ -49,7 +51,8 @@ float imprimeResultado(float x , float y)
     printf("********************\n");
     printf("   d) El producto de la multiplicacion es: %lf\n", multiplicacion);
     printf("********************\n");
-    printf("   e) El factorial del primer operando es: %lld y el factorial del segundo es %lld\n", facto1, facto2);
+    printf("   e) El factorial del primer operando %d es: %i", numFac, facto1);
+    printf(   "y el factorial del segundo %d es: %i", num2Fac, facto2);
     printf("********************\n");
 }
 
@@ -110,14 +113,14 @@ float IngresoDos() {
  }
 
  long long int Factorial(int x){
-    long long fac = x;
-    fac = 1;
-    int i;
 
-    for(i = 1; i <= fac; i++){
-        fac *=i;
+    int fac = 1;
+    while(x > 1) {
+       fac*= x;
+
+       x--;
     }
-
     return fac;
-}
+    system("PAUSE");
 
+}
