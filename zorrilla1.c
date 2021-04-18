@@ -43,17 +43,17 @@ float imprimeResultado(float x , float y)
 
     printf(" los resultados son los siguientes:\n");
     printf("********************\n");
-    printf("   a) Resultado de la suma de los operandos es: %f\n", suma);
+    printf("   a) Resultado de la suma de los operandos es: %.2f\n", suma);
     printf("********************\n");
-    printf("   b) Resultado de la resta de los operandos es: %f\n", resta);
+    printf("   b) Resultado de la resta de los operandos es: %.2f\n", resta);
     printf("********************\n");
-    printf("   c) El cociente de la division es: %f\n", division);
+    printf("   c) El cociente de la division es: %.2f\n", division);
     printf("********************\n");
-    printf("   d) El producto de la multiplicacion es: %lf\n", multiplicacion);
+    printf("   d) El producto de la multiplicacion es: %.2f\n", multiplicacion);
     printf("********************\n");
     printf("   e) El factorial del primer operando %d es: %i", numFac, facto1);
     printf(   "y el factorial del segundo %d es: %i", num2Fac, facto2);
-    printf("********************\n");
+    printf("\n ********************\n");
 }
 
 
